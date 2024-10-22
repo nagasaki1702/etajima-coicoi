@@ -33,38 +33,20 @@
 }
 
 
-
-
-
-
-
-
-.zen-kaku-gothic-new-light {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+/* ========================= service section ======================= */
+.service-item{
+  box-shadow: 0 0 45px rgba(0,0,0,0.08);
+  transform: 0.5s;
 }
 
-.zen-kaku-gothic-new-regular {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.service-item:hover{
+  background: var(--primary);
 }
 
-.zen-kaku-gothic-new-medium {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+.service-item *{
+  transform: 0.5s;
 }
 
-.zen-kaku-gothic-new-bold {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.zen-kaku-gothic-new-black {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+.service-item:hover *{
+color: var(--light) !important;
 }
