@@ -99,6 +99,13 @@
   background-size: cover;
 }
 
+.form-control,
+.form-select,
+.btn {
+  border-radius: 0; /* 角をシャープにする */
+}
+
+
 .form-control:focus {
   border-color: var(--primary) !important; /* 枠線の色を黄緑に変更 */
   box-shadow: 0 0 0 0.25rem rgba(50, 205, 50, 0.25); /* フォーカス時の影も黄緑に */
