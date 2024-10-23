@@ -1,52 +1,146 @@
-:root{
-    --primary: #86b817;
-    --secondary:#fe8800;
-    --light:#f5f5f5;
-    --dark:#14141f;
+:root {
+  --primary: #86b817;
+  --secondary: #fe8800;
+  --light: #f5f5f5;
+  --dark: #14141f;
 }
 /* ボタンの色について */
 .bg-primary {
-    background-color: var(--primary) !important;
+  background-color: var(--primary) !important;
 }
 
 .btn-primary {
-    background-color: var(--primary) !important;
-    border-color: var(--primary) !important; /* ボーダーの色を変更 */
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important; /* ボーダーの色を変更 */
 }
 
-.text-primary{
+.text-primary {
   color: var(--primary) !important;
 }
 
-.btn-primary:hover, 
-.btn-primary:focus, 
+.btn-primary:hover,
+.btn-primary:focus,
 .btn-primary:active {
-    background-color: #6a9013 !important; /* var(--primary)より少し暗い色 */
-    border-color: #6a9013 !important; /* ボーダーも同じ色に */}
+  background-color: #6a9013 !important; /* var(--primary)より少し暗い色 */
+  border-color: #6a9013 !important; /* ボーダーも同じ色に */
+}
 
 /* ========================= hero-header ======================= */
-.hero-header{
-    background: linear-gradient(rgba(20,20,31,0.7), rgba(20,20,31,0.7)), url(img/1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero-header {
+  background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)),
+    url(img/1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 /* ========================= service section ======================= */
-.service-item{
-  box-shadow: 0 0 45px rgba(0,0,0,0.08);
-  transform: 0.5s;
+.service-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  transition: background 0.5s, box-shadow 0.5s; /* transitionを適用 */
 }
 
-.service-item:hover{
+.service-item:hover {
   background: var(--primary);
 }
 
-.service-item *{
-  transform: 0.5s;
+.service-item * {
+  transition: color 0.5s; /* transitionを適用 */
 }
 
-.service-item:hover *{
-color: var(--light) !important;
+.service-item:hover * {
+  color: var(--light) !important;
+}
+
+/* ========================= destination section ======================= */
+.destination img {
+  transition: transform 0.5s ease;
+}
+
+.destination a:hover img {
+  transform: scale(1.1);
+}
+
+/* ========================= package item ======================= */
+
+.package-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08) !important;
+}
+
+.package-item img {
+  transition: 0.5s;
+}
+
+.package-item:hover img {
+  transform: scale(1.1);
+}
+
+.btn {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 600 !important;
+  transition: 0.5s !important;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+  color: #ffffff;
+}
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+/* ========================= booking item ======================= */
+.booking{
+  background: linear-gradient(rgba(15,23,43,0.7),rgba(15,23,43,0.7)),url(img/1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-control:focus {
+  border-color: var(--primary) !important; /* 枠線の色を黄緑に変更 */
+  box-shadow: 0 0 0 0.25rem rgba(50, 205, 50, 0.25); /* フォーカス時の影も黄緑に */
+}
+
+#date3 .form-control {
+  border-color: white; /* 通常時の枠線の色を白に */
+  color: white; /* 通常時のテキストの色を白に */
+}
+
+#date3 .form-control:focus {
+  border-color: var(--primary) !important; /* フォーカス時の枠線の色を黄緑に */
+  box-shadow: 0 0 0 0.25rem rgba(50, 205, 50, 0.25); /* フォーカス時の影を黄緑に */
+  color: var(--primary); /* フォーカス時のテキストの色を黄緑に */
+}
+
+/* 通常時のスタイル */
+.form-select {
+  border-color: white; /* 通常時の枠線の色を白に */
+  color: white; /* 通常時のテキストの色を白に */
+  background-color: transparent; /* 背景色を透明に */
+}
+
+/* フォーカス時のスタイル */
+.form-select:focus {
+  border-color: var(--primary) !important; /* フォーカス時の枠線の色を黄緑に */
+  box-shadow: 0 0 0 0.25rem rgba(50, 205, 50, 0.25); /* フォーカス時の影も黄緑に */
+  color: var(--primary); /* フォーカス時のテキストの色を黄緑に */
+}
+
+/* ドロップダウン表示時の選択肢の背景色を黄緑に */
+.form-select option {
+  background-color: var(--primary); /* ドロップダウンリストの背景色 */
+  color: white; /* 選択肢の文字色を白に */
+}
+
+.form-select option:hover {
+  border-color: var(--primary) !important; /* フォーカス時の枠線の色を黄緑に */
+  color: white; /* ホバー時のテキスト色も変更 */
+}
+
+
+.border-primary {
+  border-color: var(--primary) !important;
 }
