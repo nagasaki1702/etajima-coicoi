@@ -31,44 +31,108 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Google font【Zen Kaku Gothic New】-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- ================================== navbar ================================== -->
+    <div class="container-fluid bg-dark px-5 pt-4 d-none d-lg-block">
+      <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-inline-flex aline-items-center" style="height: 45px">
+            <small class="me-3 text-light"
+              ><i class="fa fa-map-marked-alt me-2"></i>広島県江田島市</small
+            >
+            <small class="me-3 text-light"
+              ><i class="fa fa-phone-alt me-2"></i>080-1111-2222</small
+            >
+            <small class="me-3 text-light"
+              ><i class="fa fa-envelope-open me-2"></i>info@example.com</small
+            >
+          </div>
+        </div>
+
+        <!-- social button -->
+
+        <div class="col-lg-4 text-center text-lg-end">
+          <div
+            class="d-inline-flex align-items-center pb-3"
+            style="height: 45px"
+          >
+            <a
+              href=""
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+            >
+              <i class="fab fa-twitter fw-nomal"></i>
+            </a>
+            <a
+              href=""
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+            >
+              <i class="fab fa-facebook fw-nomal"></i>
+            </a>
+            <a
+              href=""
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+            >
+              <i class="fab fa-youtube fw-nomal"></i>
+            </a>
+            <a
+              href=""
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+            >
+              <i class="fab fa-linkedin-in fw-nomal"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ================================== hero section ================================== -->
     <div class="container-fluid position-relative p-0">
+      <!-- main navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-1 py-lg-0"
+      >
+        <a href="" class="navbar-brand p-0">
+          <h1 class="text-primary m-0">Tourist</h1>
+        </a>
+        <!-- menu button for responsive device -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <!-- menu items -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="" class="nav-item nav-link active">Home</a>
+            <a href="" class="nav-item nav-link">About</a>
+            <a href="" class="nav-item nav-link">Services</a>
+            <a href="" class="nav-item nav-link">Packages</a>
+            <a href="" class="nav-item nav-link">Contact</a>
+            <a href="" class="nav-item nav-link">Register</a>
+          </div>
+        </div>
+      </nav>
+
       <div class="container-fluid bg-primary py-5 mb-5 hero-header">
         <div class="container py-5">
           <div class="row justify-content-center py-5">
             <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
               <h1 class="display-3 text-white mb-3">江田島</h1>
-              <p class="fs-4 text-white mb-4">
+              <p class="fs-6 text-white mb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente quibusdam fuga explicabo vitae neque nemo nulla
                 deserunt. Doloremque, dolorum provident.
               </p>
-              <div class="position-relative w-75 mx-auto">
-                <!-- input box -->
-                <input
-                  type="text"
-                  class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5"
-                  placeholder="江田島"
-                />
-                <button
-                  type="button"
-                  class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
-                  style="margin-top: 7px"
-                >
-                  search
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -681,7 +745,6 @@
     </div>
 
     <!-- ============================ team section ============================ -->
-
     <div class="container-xxl py-5">
       <div class="container">
         <div class="text-center">
@@ -807,23 +870,225 @@
       </div>
     </div>
 
+    <!-- ============================ testimonial section ============================ -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center">
+          <h6 class="section-title bg-white text-center text-primary px-3">
+            Testimonial
+          </h6>
+          <h1 class="mb-5">Our Clients Say!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel position-relative">
+          <div class="testimonial-item bg-white text-center border p-4">
+            <img
+              src="img/1.jpg"
+              alt=""
+              class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">John Doe</h5>
+            <p>New York, USA</p>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              adipisci dolore odit similique?
+            </p>
+          </div>
 
+          <div class="testimonial-item bg-white text-center border p-4">
+            <img
+              src="img/1.jpg"
+              alt=""
+              class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">John Doe</h5>
+            <p>New York, USA</p>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              adipisci dolore odit similique?
+            </p>
+          </div>
+          <div class="testimonial-item bg-white text-center border p-4">
+            <img
+              src="img/1.jpg"
+              alt=""
+              class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">John Doe</h5>
+            <p>New York, USA</p>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              adipisci dolore odit similique?
+            </p>
+          </div>
+          <div class="testimonial-item bg-white text-center border p-4">
+            <img
+              src="img/1.jpg"
+              alt=""
+              class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">John Doe</h5>
+            <p>New York, USA</p>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              adipisci dolore odit similique?
+            </p>
+          </div>
+          <div class="testimonial-item bg-white text-center border p-4">
+            <img
+              src="img/1.jpg"
+              alt=""
+              class="bg-white rounded-circle shadow p-1 mx-auto mb-3"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">John Doe</h5>
+            <p>New York, USA</p>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              adipisci dolore odit similique?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- ============================ footer section ============================ -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Company</h4>
+            <a href="" class="btn btn-link">About Us</a>
+            <a href="" class="btn btn-link">Contact Us</a>
+            <a href="" class="btn btn-link">Privacy Policy</a>
+            <a href="" class="btn btn-link">Terms & Condition</a>
+            <a href="" class="btn btn-link">FAQ & Help</a>
+          </div>
 
-    
-    <!-- jquery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Contact</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>広島県江田島市
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>080-1111-2222
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>info@example.com
+            </p>
+
+            <!-- Social icon-->
+            <div class="d-flex pt-2">
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="" class="btn btn-outline-light btn-social">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Gallery</h4>
+
+            <div class="row g-2 pt-2">
+              <div class="col-4">
+                <img src="img/1.jpg" alt="" class="img-fluid bg-light p-1" />
+              </div>
+              <div class="col-4">
+                <img src="img/1.jpg" alt="" class="img-fluid bg-light p-1" />
+              </div>
+              <div class="col-4">
+                <img src="img/1.jpg" alt="" class="img-fluid bg-light p-1" />
+              </div>
+
+              <div class="col-4">
+                <img src="img/1.jpg" alt="" class="img-fluid bg-light p-1" />
+              </div>
+              <div class="col-4">
+                <img src="img/1.jpg" alt="" class="img-fluid bg-light p-1" />
+              </div>
+              <div class="col-4">
+                <img src="img/1.jpg" alt="" class="img-fluid bg-light p-1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Newsletter</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reiciendis, minima!
+            </p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                type="text"
+                class="form-controle border-primary w-100 py-3 ps-4 pe-5"
+                placeholder="Your Email"
+              />
+              <button
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                type="button"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- copy right -->
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="" class="border-bottom">Mystery Code</a> | All
+              Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="" class="">Home</a>
+                <a href="" class="">Cookies</a>
+                <a href="" class="">Help</a>
+                <a href="" class="">FAQs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- bootstrap js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
     <script src="main.js"></script>
   </body>
 </html>
